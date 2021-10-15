@@ -72,12 +72,12 @@ export const logOut = () => async (dispatch) => {
   } catch (error) {
     dispatch(logoutError(error));
 
-    if (error.response.status === 500) {
-      toast.error("Server error! Please try again later!");
-    } else 
-    {
-      toast.error("Opps, something is wrong! Please reload the page!");
-    }
+    // if (error.response.status === 500) {
+    //   toast.error("Server error! Please try again later!");
+    // } else 
+    // {
+    //   toast.error("Opps, something is wrong! Please reload the page!");
+    // }
   }
 };
 
