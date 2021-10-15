@@ -37,12 +37,12 @@ export const register = (credentials) => async (dispatch) => {
   } catch (error) {
     dispatch(registerError(error));
 
-    if (error.response.status === 400) {
-      toast.error("This user is already exist!");
-    } else if (error.response.status === 500) {
-      toast.error("Server error! Please try again later!");
-    } else {
-      toast.error("Oops, something is wrong!");
+    // if (error.response.status === 400) {
+    //   toast.error("This user is already exist!");
+    // } else if (error.response.status === 500) {
+    //   toast.error("Server error! Please try again later!");
+    // } else {
+     { toast.error("Oops, something is wrong!");
     }
   }
 };
@@ -72,9 +72,10 @@ export const logOut = () => async (dispatch) => {
   } catch (error) {
     dispatch(logoutError(error));
 
-    if (error.response.status === 500) {
-      toast.error("Server error! Please try again later!");
-    } else {
+    // if (error.response.status === 500) {
+    //   toast.error("Server error! Please try again later!");
+    // } else 
+    {
       toast.error("Opps, something is wrong! Please reload the page!");
     }
   }
