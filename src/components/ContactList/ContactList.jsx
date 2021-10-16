@@ -19,7 +19,7 @@ export default function ContactList() {
             <span className={style.listItemName}>{name}:</span>
             <span className={style.listItemNumber}>{number}</span>
             <Delete
-              color="white"
+              color="action"
               onClick={() => dispatch(deleteContact(id))}
               cursor="pointer"
               size="large"
