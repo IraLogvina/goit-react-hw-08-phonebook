@@ -48,7 +48,6 @@ export default function LoginView() {
           onChange={handleChange}
           name="email"
           type="email"
-          autoComplete="on"
           placeholder="enter your email"
           required
         />
@@ -60,7 +59,6 @@ export default function LoginView() {
           onChange={handleChange}
           name="password"
           type="password"
-          autoComplete="on"
           placeholder="********"
           required
         />
