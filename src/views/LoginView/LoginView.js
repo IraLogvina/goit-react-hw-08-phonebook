@@ -46,6 +46,7 @@ export default function LoginView() {
         <input
           className={styles.input}
           onChange={handleChange}
+          autoComplete="on"
           name="email"
           type="email"
           placeholder="enter your email"
@@ -57,6 +58,7 @@ export default function LoginView() {
         <input
           className={styles.input}
           onChange={handleChange}
+          autoComplete="on"
           name="password"
           type="password"
           placeholder="********"
